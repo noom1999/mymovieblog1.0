@@ -161,21 +161,21 @@ cards.forEach(container => {
 
 
 
-  let prevScrollPos = window.pageYOffset;
+let navbar = document.querySelector('#navbar');
+let prevScrollPos = window.pageYOffset;
 
-  window.addEventListener("scroll", function() {
-    let currentScrollPos = window.pageYOffset;
-    if (prevScrollPos > currentScrollPos) {
-      navbar.style.top='0';
-    } else {
-   
-      navbar.style.top='-80px';
-    }
-    prevScrollPos = currentScrollPos;
-  });
+window.addEventListener('scroll', () => {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollPos > currentScrollPos) {
+    navbar.style.top = '0';
+  } else {
+    navbar.style.top = '-80px';
+  }
+  prevScrollPos = currentScrollPos;
+});
 
-
-  let buttontotop = document.getElementById("btn-back-to-top");
+console.log(navbar);
+/*   let buttontotop = document.getElementById("btn-back-to-top");
   window.onscroll = function (){
     scrollFunction();
   };
@@ -201,7 +201,7 @@ function backtoTop(){
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
  
-}
+} */
 applyDesign();
 function applyDesign() {
   const urlParams = new URLSearchParams(window.location.search);

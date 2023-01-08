@@ -5,7 +5,7 @@
 }
 
 body  {
-overflow-x: hidden;
+
  background-color: #323031;
 
 }
@@ -47,7 +47,7 @@ padding: 25px;
 
 width: 100%;
   position:fixed;
-top:0;
+
 background-color: #F7F9F9;
   display: flex;
   align-items: center;
@@ -55,7 +55,7 @@ background-color: #F7F9F9;
   z-index: 999;
 }
 .navbar-link li{
-  padding: 20px;
+
 }
 ul {
  
@@ -97,10 +97,10 @@ font-size: 40px;
 
 } */
 .carousel-inner .carousel-item img{
-  width: 100%;
+  
  
 
-  height: 600px;
+  height: 600px; 
 
 }
 .container1 .img-header img {
@@ -192,13 +192,31 @@ padding-left: 40px;
 padding-top:30px ;
 margin-top:50px ;
 font-size: 40px;
-font-weight: 400;
+font-weight: bolder;
 
 
 }
+.text-title2{
+  padding-left: 40px;
+padding-top:20px ;
+font-weight: bolder;
+font-size: 40px;
+
+}
 .text-title-name{
+
+  padding-left: 40px;
+
+  
+  font-style: bold;
+
+}
+.text-title-movie{
   font-size: 20px;
   padding-left: 40px;
+
+  font-weight: 500;
+  font-style: bold;
 
 }
 .content-title .textin{
@@ -256,17 +274,17 @@ text-decoration: none;
   text-decoration: none;
 }
 .carousel-inner{ 
-display: block;
+/* display: block;
 
 padding: 10px;
 
  justify-content: center;
 align-items: center;
- font-size:10px;
+ font-size:10px; */
 }
 .carousel-control-prev,
 .carousel-control-next {
-  height: 25%;
+  /* height: 25%; */
 
 
 }
@@ -280,29 +298,67 @@ align-items: center;
   opacity: 1;
   transform: translateX(0);
 }
+#intro {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  font-size: 3em;
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+#text {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  transition: top 1s;
+}
+.text-title-movie{
+padding-bottom: 10px;
+}
+
 @media (min-width: 576px)   and (max-width: 991.98px){
   .text-title{
-    font-size: 23px;
- font-weight: 500;
+    font-size: 30px;
+    font-weight: bold;
+
     overflow-x: hidden;
   }
-    .text-title-name{
+  .text-title2{
+    font-size: 30px;
+    font-weight: 500;
+    font-weight: bold;
+       overflow-x: hidden;
+  }
+  .text-title-name{
+
+    padding-left: 40px;
+    font-size: 20px;
+    
+    font-style: bold;
+  
+  }
+  .text-title-movie{
+
+    padding-left: 40px;
     font-size: 15px;
     
     font-style: bold;
+  
   }
+  
   .carousel-inner {
 /* height: 500px;
 width: 500px; */
-background-size: cover;
+/* background-size: cover; */
   }
-  .text-title{
-    font-size: 20px;
 
-  }
 }
 @media (max-width: 575px) {
-  .active{
+  .nav-active{
     display: none;
   }
   body{
@@ -315,15 +371,49 @@ background-size: cover;
  font-weight: 500;
     overflow-x: hidden;
   }
+  .text-title2{
+    font-size: 20px;
+ font-weight: 500;
+    overflow-x: hidden;
+  }
+ 
+  .text-title-movie{
+    padding-left: 40px;
+    font-size: 11px;
+font-weight: 500;
+}
+
   .carousel-inner {
-    width: 100%;
+  /*   width: 100%;
     height: 400px;
     object-fit: fill;
-        overflow-x: hidden;
+        overflow-x: hidden; */
+  }
+  .text-title{
+
+    padding-left: 40px;
+    font-size: 30px;
+    font-weight: bold;
+  
+  }
+  .text-title2{
+
+    padding-left: 40px;
+    font-size: 30px;
+    font-weight: bold;
+  
   }
   .text-title-name{
-    font-size: 12px;
-    
-    font-style: bold;
+
+    padding-left: 40px;
+    font-size: 18px;
+
+  
+  }
+  .text-title-movie{
+    padding-left: 40px;
+    font-size: 11px;
+font-weight: 500;
+ 
   }
 }

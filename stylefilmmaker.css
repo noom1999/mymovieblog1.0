@@ -240,11 +240,11 @@ color: black;
         }
   */
   .navbar-link{
-    top: 0;
+
   
   width: 100%;
     position:fixed;
-  top:0;
+
 background-color: #F7F9F9;
     display: flex;
     align-items: center;
@@ -252,7 +252,7 @@ background-color: #F7F9F9;
     z-index: 999;
   }
   .navbar-link li{
-    padding: 20px;
+/*     padding: 20px; */
   }
   ul {
    
